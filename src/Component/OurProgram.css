@@ -1,0 +1,100 @@
+.our-program-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.our-program-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f96868;
+}
+
+.program-description {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.programs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.program-card {
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: scale(1.05);
+}
+
+.program-early-learning .program-title {
+  color: #ff5733;
+}
+
+.program-early-learning .program-content {
+  color: #c70039;
+}
+
+.program-art-creativity .program-title {
+  color: #1e90ff;
+}
+
+.program-art-creativity .program-content {
+  color: #4682b4;
+}
+
+.program-physical-development .program-title {
+  color: #32cd32;
+}
+
+.program-physical-development .program-content {
+  color: #228b22;
+}
+
+.learn-more-link {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.learn-more-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .program-card {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .our-program-heading {
+    font-size: 1.9rem;
+  }
+
+  .program-description {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+  }
+}
+
+@media (max-width: 480px) {
+  .program-card {
+    width: 100%;
+  }
+}

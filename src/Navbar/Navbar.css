@@ -1,0 +1,131 @@
+.NavbarItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 0 130px;
+  height: 60px;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 15px;
+  list-style: none;
+  align-items: center;
+}
+.logo {
+  width: 15rem;
+  transition: all 0.4s ease-in-out;
+}
+.logo:hover {
+  width: 13rem;
+}
+.nav-links {
+  text-decoration: none;
+  color: #fe4d4d;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 10px;
+  transition: all 0.35s ease-in-out;
+}
+
+.nav-links i {
+  padding-right: 10px;
+}
+
+.nav-links:hover {
+  background-color: #fe4d4d;
+  color: rgb(255, 255, 255);
+}
+.fas.fa-times {
+  color: #ff000087;
+}
+.fas.fa-bars {
+  color: #fe4d4d;
+}
+
+.menu-icons {
+  display: none;
+}
+.button-on-navbar {
+  text-decoration: none;
+  display: block;
+  max-width: 200px;
+  color: #ffffff;
+  background-color: #fe4d4d;
+  margin: 0 auto;
+  font-size: 0.5rem;
+  padding: 0.1rem 1rem;
+  white-space: nowrap;
+  border-radius: 10px;
+  transition: all 0.35s ease-in-out;
+}
+
+.button-on-navbar:hover {
+  background-color: #ffffff00;
+  color: #fe4d4d;
+  font-size: 0.6rem;
+}
+
+@media screen and (max-width: 850px) {
+  .NavbarItems {
+    height: 45px;
+    padding: 0 40px;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 45%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    align-items: flex-start;
+    padding: 20px 40px;
+    margin-top: 45px;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 15px 15px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 50px 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav-menu.active {
+    left: 0px;
+    opacity: 1;
+  }
+
+  .nav-links {
+    width: 80%;
+    display: block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fe4d4d;
+    transition: none;
+  }
+  .nav-links:hover {
+    border-radius: 10px;
+  }
+  .logo {
+    width: 10rem;
+  }
+  .menu-icons {
+    display: block;
+  }
+  .menu-icons i {
+    font-size: 1.3rem;
+  }
+  .button-on-navbar {
+    font-size: 0.5rem;
+    margin-top: 20px;
+    padding: 2px 60px;
+  }
+}
