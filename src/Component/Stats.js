@@ -6,15 +6,15 @@ const Stats = () => {
     <div className="stats-container">
       <div className="stat-item square">
         <h3>Current Students</h3>
-        <p>75+</p>
+        <p>100+</p>
       </div>
       <div className="stat-item circle">
         <h3>Teachers</h3>
-        <p>13+</p>
+        <p>5+</p>
       </div>
       <div className="stat-item triangle">
         <h3>Staff</h3>
-        <p>5+</p>
+        <p>2+</p>
       </div>
     </div>
   );
